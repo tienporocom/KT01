@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrapper{
+            width: 960px;
+            height: 700px;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+        header{
+            position: relative;
+            width: 960px;
+            height: 100px;
+            background-color: #294e79;
+        }
+        .logo{
+            position: relative;
+            left: 20px;
+            top: 10px;
+            width: 60px;
+            height: 80px;
+        }
+        .web_name{
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            left: 85px;
+            top: 8px;
+        }
+        .des_web_name{
+            color: #fff;
+            position: absolute;
+            left: 85px;
+            top: 60px;
+        }
+        #seach_form_inp{
+           background-color: #1c3451;
+           border: 1px solid #4579b7; 
+           color: #fff;
+           margin-right: 15px;
+           height: 20px;
+
+        }
+        #seach_form_btn{
+            background-color: #1c3451;
+           border: 1px solid #4579b7; 
+           color: #fff;
+           height: 20px;
+
+        }
+        .seach_form{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .nav{
+            display: flex;
+            width: 550px;
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+        }
+        .nav_item {
+            padding: 10px 15px;
+            background-color: #3d73b1;
+        }
+        .nav_item a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+        .container{
+            width: 100%;
+            display: flex;
+        }
+        .left_cnt{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .c1{
+            width: 55%;
+            height: 100px;
+        }
+        .c2{
+            width: 40%;
+            height: 100px;
+            /* background-color: yellow; */
+        }
+        .c3{
+            width: 30%;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .main_para{
+            width: 100%;
+            padding: 40px 0px 15px 15px;
+            font-size: 25px;
+            font-weight: 400;
+            border-bottom: 2px dashed gray;
+        }
+        .c1_para{
+            padding: 20px 30px 20px 15px;
+            text-align: justify;
+            color: red;
+            font-style: italic;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow:  8px 8px 5px green;
+            font-weight: 400;
+        }
+        .c2_para{
+            padding: 15px 0px 15px;
+            width: 100%;
+            font-size: 25px;
+            font-weight: 400;
+            border-bottom: 2px dashed gray;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="/IMG/logo.png" alt="" class="logo">
+            <p class="web_name">FlowerBox 360</p>
+            <p class="des_web_name">... to get your daily dose of luxury roses!</p>        
+            <form action="" class="seach_form">
+                <input type="text" name="" id="seach_form_inp" placeholder="Seach the site...">
+                <input  id="seach_form_btn" type="button" value="GO">
+            </form>
+            <div class="nav">
+                <div class="nav_item"><a href="">Home</a></div>
+                <div class="nav_item"><a href="">Promotion</a></div>
+                <div class="nav_item"><a href="">Gift Baskets</a></div>
+                <div class="nav_item"><a href="">Flower Service</a></div>
+                <div class="nav_item"><a href="">About</a></div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="left_cnt">
+                <p class="main_para">Why Not Contact Us Today!</p>
+                <div class="c1">
+                    <p class="c1_para">For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.</p>
+                    <form action="" class="c1_form">
+                        <table>
+                            <tr>
+                                <td><label for="name_ip">Name:</label></td>
+                                <td><label for="mail_ip">Email:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="" id="name_ip"></td>
+                                <td><input type="email" name="" id="mail_ip"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel_ip">Telephone:</label></td>
+                                <td><label for="sub_ip">Subject:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" name="" id="tel_ip"></td>
+                                <td><input type="text" name="" id="sub_ip"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="mess_ip">Message:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> <textarea name="" id="" cols="30" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <td><input type="button" value="Submit"> <input type="button" value="Reset"></td>
+                                </tr>
+                            </tr>
+                        </table>
+                        
+                    </form>
+                </div>
+                <div class="c2">
+                    <p class="c2_para">FlowerBox 360 Info!</p>
+                </div>
+            </div>
+            <div class="c3">
+                
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
