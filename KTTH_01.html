@@ -12,7 +12,6 @@
         }
         .wrapper{
             width: 960px;
-            height: 700px;
             background-color: #fff;
             border: 1px solid black;
         }
@@ -47,14 +46,19 @@
            border: 1px solid #4579b7; 
            color: #fff;
            margin-right: 15px;
-           height: 20px;
+           height: 25px;
 
+        }
+        #seach_form_inp::placeholder{
+            padding-left: 5px;
+            color: #fff;
         }
         #seach_form_btn{
             background-color: #1c3451;
            border: 1px solid #4579b7; 
            color: #fff;
-           height: 20px;
+           height: 25px;
+           padding: 0 3px;
 
         }
         .seach_form{
@@ -79,7 +83,10 @@
             text-decoration: none;
 
         }
+        
         .container{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 60px;
             width: 100%;
             display: flex;
         }
@@ -91,21 +98,19 @@
         }
         .c1{
             width: 55%;
-            /* height: 100px; */
         }
         .c2{
-            width: 40%;
-            /* height: 100px; */
-            /* background-color: yellow; */
+            width: 35%;
         }
         .c3{
             width: 30%;
             height: 100px;
-            border: 1px solid red;
         }
         .main_para{
-            width: 100%;
-            padding: 40px 0px 15px 15px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 95%;
+            padding: 40px 0px 15px 0px;
+            margin-left: 15px;
             font-size: 25px;
             font-weight: 400;
             border-bottom: 2px dashed gray;
@@ -119,7 +124,25 @@
             text-shadow:  8px 8px 5px green;
             font-weight: 400;
         }
+        table input{
+            height: 22px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+            border: 1px solid gray;
+
+        }
+        table textarea{
+            background-color: #f7f7f7;
+        }
+        .c1_btn{
+            margin-top: 20px;
+            padding: 8px;
+            line-height: 10px;
+            border: 1px solid gray;
+        }
         .c2_para{
+            font-family: 'Times New Roman', Times, serif;
             padding: 15px 0px 15px;
             width: 100%;
             font-size: 25px;
@@ -140,11 +163,41 @@
             padding-top: 20px;
             
         }
+        .c3_para{
+            font-family: 'Times New Roman', Times, serif;
+            padding: 60px 0px 15px;
+            width: 90%;
+            margin-right: 30px;
+            font-size: 25px;
+            font-weight: 400;
+            border-bottom: 2px dashed gray;
+        }
+        .c3_img{
+            width: 250px;
+            height: 100px;
+            padding: 4px;
+            margin-top: 20px;
+            border: 1px solid gray;
+        }
+        .c3_des{
+            width: 250px;
+            margin-right: 30px;
+            float: left;
+            text-align: justify;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            display: block;
+        }
+        .c3_link{
+            color: #00436d;
+            font-weight: bold;
+            margin-right: 30px;
+            float: right;
+            padding-top: 20px;
+            text-decoration: none;
+        }
         footer{
             background-color: #1c3451;
-            /* display: flex; */
-            /* position: relative;
-            top: 400px; */
             height: 35px;
         }
         #footer_line{
@@ -203,11 +256,11 @@
                                 <td colspan="2"><label for="mess_ip">Message:</label></td>
                             </tr>
                             <tr>
-                                <td colspan="2"> <textarea name="" id="" cols="30" rows="10"></textarea></td>
+                                <td colspan="2"> <textarea name="" id="" cols="41" rows="4"></textarea></td>
                             </tr>
                             <tr>
                                 <tr>
-                                    <td><input type="button" value="Submit"> <input type="button" value="Reset"></td>
+                                    <td><input class="c1_btn" type="button" value="Submit"> <input class="c1_btn" type="button" value="Reset"></td>
                                 </tr>
                             </tr>
                         </table>
@@ -239,7 +292,10 @@
                 </div>
             </div>
             <div class="c3">
-                
+                <p class="c3_para">Discount & Specials</p>
+                <img src="/IMG/rose.png" alt="" class="c3_img">
+                <p class="c3_des">FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+                <a class="c3_link" href="">Read More >></a>
             </div>
         </div>
         <footer>
