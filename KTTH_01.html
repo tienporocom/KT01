@@ -74,6 +74,7 @@
             right: 5px;
         }
         .nav_item {
+            position: relative;
             padding: 10px 15px;
             background-color: #3d73b1;
         }
@@ -86,7 +87,32 @@
             text-decoration: none;
 
         }
-        
+        .nav_subnav{
+            display: none;
+            position: absolute;
+            top: 39px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            background-color: #8babd0;
+        }
+        .nav_subnav_item{
+            
+            box-sizing: border-box;
+            padding-left: 15px;
+            line-height: 30px;
+            height: 50%;
+            border: 1px solid rgb(158, 196, 240);
+        }
+        .nav_item:hover .nav_subnav{
+            display: block;
+            background-color: #9bbbe0;
+
+        }
+        .nav_subnav_item:hover{
+            background-color: #edf6ff;
+            cursor: pointer;
+        }
         .container{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding-bottom: 60px;
@@ -125,7 +151,7 @@
             font-style: italic;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-shadow:  8px 8px 5px green;
-            font-weight: 400;
+            font-weight: 450;
         }
         table input{
             height: 22px;
@@ -228,7 +254,13 @@
                 <div class="nav_item"><a href="">Home</a></div>
                 <div class="nav_item"><a href="">Promotion</a></div>
                 <div class="nav_item"><a href="">Gift Baskets</a></div>
-                <div class="nav_item"><a href="">Flower Service</a></div>
+                <div class="nav_item"><a href="">Flower Service</a>
+                    <div class="nav_subnav">
+                        <div class="nav_subnav_item">Flower for Wedding</div>
+                        <div class="nav_subnav_item">Flower for Conference</div>
+
+                    </div>
+                </div>
                 <div class="nav_item"><a href="">About</a></div>
             </div>
         </header>
